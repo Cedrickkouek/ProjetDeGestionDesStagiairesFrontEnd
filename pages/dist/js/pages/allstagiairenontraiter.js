@@ -86,7 +86,9 @@ function displayStagiaires(data) {
             emailSelected = stagiaire.email;
             validateRequest(emailSelected);
             alert("EMAIL DE VALIDATION ENVOYE AU CANDIDAT !");
-            window.location.reload();
+            setTimeout(function(){
+                window.location.reload();
+            }, 5000);
         };
 
         rejectButton.onclick = function() {
@@ -94,7 +96,9 @@ function displayStagiaires(data) {
             emailSelected = stagiaire.email;
             rejectRequest(emailSelected);
             alert("EMAIL DE REFUS ENVOYE AU CANDIDAT !");
-            window.location.reload();
+            setTimeout(function(){
+                window.location.reload();
+            }, 5000);
         };
 
         row.appendChild(actionsCell);
